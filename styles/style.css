@@ -124,7 +124,7 @@ section .header {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
 }
 
-.slider iframe {
+.slider video {
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
