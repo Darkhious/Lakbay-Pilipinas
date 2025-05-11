@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lakbay Pilipinas</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <div id="main-div">
+
+            <section id="hero-section">
+                <div class="text-overlay">
+                    <h1>CRYSTAL COVE ISLAND</h1>
+                    <p>Crystal Cove Island, located off the coast of Boracay in the Philippines, is a popular island retreat known for its scenic beauty, crystal-clear waters, and lush landscapes. The island is approximately 2.6 kilometers from the main Boracay island and is accessible via boat rides that typically depart from the mainland.</p>
+                </div>
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <div class="gradient-overlay"></div>
+                        <video id="slide-1" src="vid/vid1.mp4" autoplay muted loop playsinline loading="lazy"></video>
+                        <img id="slide-2" src="img/img1.webp" alt="Image 1" loading="lazy">
+                        <img id="slide-3" src="img/img2.webp" alt="Image 2" loading="lazy">
+                        <img id="slide-4" src="img/img3.webp" alt="Image 3" loading="lazy">
+                        <img id="slide-5" src="img/img4.webp" alt="Image 4" loading="lazy">
+                    </div>
+
+                    <div class="action-button">
+                        <a href="#about-section"><button>Explore now!</button></a>
+                    </div>
+
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                        <a href="#slide-4"></a>
+                        <a href="#slide-5"></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about-section">
+                <div class="container">
+                    <div class="header">
+                        <h1>ABOUT THE PLACE</h1>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="small-card card">
+                            <div class="card-icon">
+                                <img src="icons/compass.svg" alt="Compass" loading="lazy">
+                            </div>
+                            <div class="card-divide">
+                                 <h2>Trekking</h2>
+                                 <hr />
+                                <p>A fun-filled trek for the whole family! Hike to two stunning coves—it's easy, breezy, and the views are totally worth the steps!</p>
+                            </div>
+                        </div>
+                        <div class="small-card card">
+                            <div class="card-icon">
+                                <img src="icons/pool.svg" alt="Pool" loading="lazy">
+                            </div>
+                            <div class="card-divide">
+                                <h2>Snorkling</h2>
+                                <hr />
+                                <p>Snorkel in crystal-clear coves—if the sea's calm, dive in! Cove 1 or Cove 2, every splash is a blast!</p>
+                            </div>
+                        </div>
+                        <div class="small-card card">
+                            <div class="card-icon">
+                                <img src="icons/cookie.svg" alt="Cookie" loading="lazy">
+                            </div>
+                            <div class="card-divide">
+                                <h2>Fish Feeding</h2>
+                                <hr />
+                                <p>Snorkeling and fishing? Absolutely! Grab some bread or biscuits—drop them in and watch the fish swarm in seconds!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="travel-section">
+                <div class="container">
+                    <div class="header">
+                        <h1>TRAVEL GUIDE</h1>
+                    </div>
+                    <div class="map-wrapper">
+                        <div id="point-1" class="map-point">
+                            <div class="content">
+                                <div class="text">
+                                    <h2>1 - Cabanatuan City</h2>
+                                    <p>Start your adventure in Cabanatuan City, where you can catch a bus or a private van to Clark International Airport (CRK). Buses take about 2 to 3 hours and cost between ₱300 to ₱500, while a faster private van can get you there in 1.5 to 2.5 hours for ₱400 to ₱600.</p>
+                                </div>
+
+                                <div class="controls">
+                                    <button class="prev" onclick="changeMap(-1)">&#10094;</button> <!-- Left caret -->
+                                    <button class="next" onclick="changeMap(1)">&#10095;</button>  <!-- Right caret -->
+                                </div>
+
+                            </div>
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18154.09890712329!2d120.95441639153304!3d15.481310485972807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339728c30bd339ad%3A0x33d366a010e72022!2sCabanatuan%20City%20Central%20Transport%20Terminal!5e1!3m2!1sen!2sph!4v1746967823682!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                        <div id="point-2" class="map-point">
+                            <div class="content">
+                                <div class="text">
+                                    <h2>2 - Clark International Airport</h2>
+                                    <p>From Clark, hop on a quick flight to Caticlan Airport (MPH)—Boracay’s closest airport. The flight takes approximately 1 hour, with prices ranging from ₱1,500 to over ₱5,000, depending on how early you book.</p>
+                                </div>
+                            
+                                <div class="controls">
+                                    <button class="prev" onclick="changeMap(-1)">&#10094;</button> <!-- Left caret -->
+                                    <button class="next" onclick="changeMap(1)">&#10095;</button>  <!-- Right caret -->
+                                </div>
+                                
+                            </div>
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6427.1651981475825!2d120.5538986283779!3d15.197668610566309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396ed423e05b3c1%3A0x18f5077b177de57e!2sClark%20International%20Airport!5e1!3m2!1sen!2sph!4v1746968885318!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                        <div id="point-3" class="map-point">
+                            <div class="content">
+                                <div class="text">
+                                    <h2> 3 - Caticlan</h2>
+                                    <p>Once you land in Caticlan, take a tricycle to the jetty port, which costs around ₱100 to ₱150 (be sure to negotiate!). From the jetty, ride a ferry for about 15 to 20 minutes to Boracay Island. The ferry fare is ₱30, and combined with the terminal and environmental fees (₱300), your total comes to ₱330.</p>
+                                </div>
+                           
+                                <div class="controls">
+                                    <button class="prev" onclick="changeMap(-1)">&#10094;</button> <!-- Left caret -->
+                                    <button class="next" onclick="changeMap(1)">&#10095;</button>  <!-- Right caret -->
+                                </div>
+                                
+                            </div>
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3258.153599731533!2d121.95502991267264!3d11.927014872226877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53e5b9226e211%3A0x22aa959bff32943f!2sGodofredo%20P.%20Ramos%20Airport!5e1!3m2!1sen!2sph!4v1746969060132!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                        <div id="point-4" class="map-point">
+                            <div class="content">
+                                <div class="text">
+                                    <h2>4 - Boracay</h2>
+                                    <p>Now on Boracay, it's time to reach Crystal Cove Island. You can join an island hopping tour for ₱800 to ₱1,500+ per person, or charter a private boat for around ₱1,500 to ₱3,500+, depending on the boat size and your haggling skills. Either way, the boat ride takes about 15 to 20 minutes across gorgeous turquoise waters.</p>
+                                </div>
+                            
+                                <div class="controls">
+                                    <button class="prev" onclick="changeMap(-1)">&#10094;</button> <!-- Left caret -->
+                                    <button class="next" onclick="changeMap(1)">&#10095;</button>  <!-- Right caret -->
+                                </div>
+                                
+                            </div>
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52122.66109330538!2d121.8865281812051!3d11.967509607793101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53c2f324b4ee7%3A0xa738e81e5e6dda36!2sBoracay!5e1!3m2!1sen!2sph!4v1746969221006!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                        <div id="point-5" class="map-point">
+                            <div class="content">
+                                <div class="text">   
+                                    <h2> 5 - Crystal Cove Island</h2>
+                                    <p>Altogether, the estimated one-way cost per person is about ₱3,130 if you go with the budget route (van, budget flight, shared tour), or up to ₱7,580 if you opt for a more comfortable experience (van, flexible flight, private boat).</p>
+                                </div>
+
+                                <div class="controls">
+                                    <button class="prev" onclick="changeMap(-1)">&#10094;</button> <!-- Left caret -->
+                                    <button class="next" onclick="changeMap(1)">&#10095;</button>  <!-- Right caret -->
+                                </div>
+                                
+                            </div>
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3257.9432491207185!2d121.95548887410392!3d11.944509136565395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53e7a0706ff2b%3A0xfa16566172ac5d15!2sCrystal%20Cove%20Island%20Resort!5e1!3m2!1sen!2sph!4v1746969252460!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="hotel-section">
+                <div class="container">
+                    <div class="header">
+                        <h1>WHERE TO STAY</h1>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="hotel-card" id="hotel-card-1">
+                            <div class="text">
+                                <h2>Marnin's Bora Place</h2>
+                                <div class="stars">
+                                    <img src="icons/star-filled.svg" alt="star filled">
+                                    <img src="icons/star-filled.svg" alt="star filled">
+                                    <img src="icons/star-filled.svg" alt="star filled">
+                                    <img src="icons/star-filled.svg" alt="star filled">
+                                    <img src="icons/star-filled.svg" alt="star filled">
+                                </div>
+                            </div>
+                            <div class="book-now">
+                                <a href="https://example.com/marnins" target="_blank" class="outlined-btn">Book Now</a>
+                            </div>
+                        </div>
+
+                        <div class="hotel-card" id="hotel-card-2">
+                            <div class="text">
+                                <h2>Feliness Resort</h2>
+                                <div class="stars">
+                                    <img src="icons/star-filled.svg" alt="star filled">
+                                    <img src="icons/star-filled.svg" alt="star filled">
+                                    <img src="icons/star-filled.svg" alt="star filled">
+                                    <img src="icons/star-filled.svg" alt="star filled">
+                                    <img src="icons/star-outlined.svg" alt="star filled">
+                                </div>
+                            </div>
+                            <div class="book-now">
+                                <a href="https://example.com/feliness" target="_blank" class="filled-btn">Book Now</a>
+                            </div>
+                        </div>
+
+                        <div class="hotel-card" id="hotel-card-3">
+                            <div class="text">
+                                <h2>Under The Stars</h2>
+                                <div class="stars">
+                                    <img src="icons/star-filled.svg" alt="star filled">
+                                    <img src="icons/star-filled.svg" alt="star filled">
+                                    <img src="icons/star-filled.svg" alt="star filled">
+                                    <img src="icons/star-filled.svg" alt="star filled">
+                                    <img src="icons/star-outlined.svg" alt="star filled">
+                                </div>
+                            </div>
+                            <div class="book-now">
+                                <a href="https://example.com/underthestars" target="_blank" class="outlined-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
